@@ -19,8 +19,40 @@ window.onload = function(){
 		}
 	];
 
+	var resources = {
+		title: "Resources",
+		list: [
+			{
+				title: "W3Schools",
+				link: "https://www.w3schools.com"
+			},
+			{
+				title: "Stack Overflow",
+				link: "https://stackoverflow.com"
+			},
+			{
+				title: "Learn CSS Layout",
+				link: "http://learnlayout.com/"
+			},
+			{
+				title: "Learn to Code HTML & CSS",
+				link: "https://learn.shayhowe.com"
+			},
+			{
+				title: "Code Academy: Learn HTML",
+				link: "https://www.codecademy.com/learn/learn-html"
+			},
+			{
+				title: "Code Academy: Learn CSS",
+				link: "https://www.codecademy.com/learn/learn-css"
+			}
+		]
+	}
+
 	contents.forEach(function(content){
 		document.querySelector("#root").innerHTML += `${Site.basicContent(content)}`
 	})
+
+	document.querySelector("#root").innerHTML += `${Site.Resources(resources)}`;
 
 }

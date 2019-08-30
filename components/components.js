@@ -20,3 +20,18 @@ Site.basicContent = function(post){
 	${assignment}
 	</section>`;
 };
+
+Site.Resources = function(resources){
+
+	let resourcelist = "";
+
+	resources.list.forEach(function(listitem){
+		resourcelist += `<li><a target="_blank" href="${listitem.link}">${listitem.title}</a></li>`;
+	})
+
+	return `<section><hr />
+		<h2>${resources.title}</h2>
+		<ul>${resourcelist}</ul>
+	</section>`;
+
+}
