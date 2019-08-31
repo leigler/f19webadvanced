@@ -5,7 +5,7 @@ window.onload = function(){
 			day: "Friday, August 30",
 			list: [
 				"Introductions, <a target='_blank' href='https://arena-attachments.s3.amazonaws.com/4925664/a211189c7746cf80e8af048666ca405d.pdf' >Syllabus Review</a>, Expectations", 
-				"Discussion: HTML/CSS Review",
+				"Discussion: HTML/CSS Review (<a target='_blank' href='files/boilerplate.zip'>boilerplate.zip</a>)",
 				"Github installation, <a target='_blank' href='https://git-scm.com/book/en/v2/Getting-Started-Installing-Git'>Git</a>, <a target='_blank' href='https://help.github.com/en/desktop/getting-started-with-github-desktop'>Github Desktop</a>, and <a target='_blank' href='https://pages.github.com/'>Github Pages</a>"
 			],
 			assignmentTitle : "Assignment 1, Index",
