@@ -17,9 +17,23 @@ body, html{
 }
 
 body{
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
 	padding-bottom: 5rem;
+}
+
+@media(max-width: 1000px){
+	body{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}	
+}
+
+@media(max-width: 800px){
+	body{
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}	
 }
 
 hr{
@@ -80,4 +94,34 @@ a:active{ color: black; }
 
 @media(any-hover: hover){
 	a:hover{ color: white; }
+}
+
+code{
+	font-family: 'IBM Plex Mono', monospace;
+	background-color: #00b078;
+	border-radius: 4px;
+	color: white;
+	padding-left: 0.25rem;
+	padding-right: 0.25rem;
+	font-size: 0.7rem;
+}
+
+pre{
+	font-family: 'IBM Plex Mono', monospace;
+	background-color: #00b078;
+	border-radius: 4px;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	
+}
+
+pre code{
+	background-color: transparent;
+	padding-left: 0;
+	padding-right: 0;
+	max-width: 100%;
+	white-space: pre-wrap;
+	word-break: break-all;
 }
