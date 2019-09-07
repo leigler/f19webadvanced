@@ -6,7 +6,7 @@ window.onload = function(){
 			list: [
 				`Github Setup`,
 				`HTML Review`,
-				`Lecture: <a href="lectures/index.html">Javascript Basics</a>`,
+				`Lecture: <a href="lectures/index.html">Javascript Basics</a>, <a target="_blank" href="../files/javascript-lecture-1.zip">lecture files</a>`,
 				`Exercise: <a href="exercises/index.html">Javascript Loops</a>`,
 				`Assignment 1: Reading and Project Review`
 			],

@@ -2,10 +2,16 @@ window.onload = function(){
 
 	var contents = [
 		{
-			day: "Javascript Basics, Pt 1",
+			day: "Javascript Basics, Pt 1: Variables, the console, Conditionals, and Loops",
 			list: [],
-			assignmentTitle : "Variables, the console, Conditionals, and Loops",
+			assignmentTitle : "",
 			sections: [
+				{
+					title: `Example Files`,
+					paragraphs: [
+					'The demo files from this lecture can be found <a target="_blank" href="../files/javascript-lecture-1.zip">here</a>'
+					]
+				},
 				{
 					title: `Loading your Javascript`,
 					paragraphs: [
