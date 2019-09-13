@@ -84,6 +84,22 @@ window.onload = function(){
 				{
 					title: "Code Academy: Learn CSS",
 					link: "https://www.codecademy.com/learn/learn-css"
+				},
+				{
+					title: "Code Academy: Learn Javascript",
+					link: "https://www.codecademy.com/learn/learn-javascript"
+				},
+				{
+					title: "Code Academy: Learn jQuery",
+					link: "https://www.codecademy.com/learn/learn-jquery"
+				},
+				{
+					title: "Dev Docs",
+					link: "https://devdocs.io"
+				},
+				{
+					title: "Shapes of CSS",
+					link: "https://css-tricks.com/the-shapes-of-css/"
 				}
 			]
 		},
