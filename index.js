@@ -7,7 +7,7 @@ window.onload = function(){
 				`<a target="_blank" href="https://docs.google.com/spreadsheets/d/17x37V9wdFWnQLyZS9iHwZPquyVj36RixKa6eixHFVOU/edit?usp=sharing">Assignment 1 (Index) Spreadsheet</a>`,
 				`Assignment 2, Pattern Readings`,
 				`Assignment 2, Pattern Review`,
-				`Lecture: <a href="lectures/index.html">Javascript loops, DOM, and template literals</a>`,
+				`Lecture: <a href="lectures/index.html">Javascript loops, DOM, and template literals</a>, <a target="_blank" href="files/_f19-sept-13.zip">lecture files</a>`,
 				`Nesting patterns, work session`
 			],
 			assignmentTitle: "<a href='assignments/index.html'>Assignment 2, Pattern Week 2</a>",
@@ -100,6 +100,14 @@ window.onload = function(){
 				{
 					title: "Shapes of CSS",
 					link: "https://css-tricks.com/the-shapes-of-css/"
+				},
+				{
+					title: "Centering in CSS Guide",
+					link: "https://css-tricks.com/centering-css-complete-guide/"
+				},
+				{
+					title: "Guide to Flexbox",
+					link: "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
 				}
 			]
 		},
