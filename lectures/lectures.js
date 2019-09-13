@@ -39,6 +39,51 @@ var myVariable = &#96;
 					]
 				},
 				{
+					title: `Appending to the DOM`,
+					paragraphs: [
+					`in addition to the innerHTML method we learned last class, we also can append specific elements to the DOM with the <code>append</code> method:`,
+						`<pre><code>var element = document.createElement("div");
+element.className = "important";
+
+var content = "some content",
+    subtitle = "a subtitle";
+
+element.innerHTML = &#96;
+
+  &lt;h1>&#36;{subtitle}&lt;/h1>
+  &lt;p>&#36;{content}&lt;/p>
+
+&#96;
+
+document.querySelector('#wrapper').appendChild(element);
+
+
+</code></pre>`,
+					`or with <code>element.insertAdjacentHTML(position, text);</code>:`,
+					`<pre><code>var content = "some content",
+    subtitle = "a subtitle";
+
+var myTemplate = &#96;
+
+  &lt;h1>&#36;{subtitle}&lt;/h1>
+  &lt;p>&#36;{content}&lt;/p>
+
+&#96;
+
+document.querySelector('#wrapper').insertAdjacentHTML('beforeend', myTemplate)
+
+
+</code></pre>`,
+`which has the options of <br><code>'beforebegin'</code><br>
+<code>'afterbegin'</code><br>
+<code>'beforeend'</code><br>
+<code>'afterend'</code><br>`
+
+
+
+					]					
+				},
+				{
 					title: `Javascript&rsquo;s Math object`,
 					paragraphs: [
 						"The javascript Math object* allows you to perform mathematical tasks on numbers.",
