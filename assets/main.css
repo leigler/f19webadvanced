@@ -36,6 +36,16 @@ body{
 	}	
 }
 
+@media(min-width: 1600px){
+	body, html{
+		font-size: 35px;
+	}
+	body{
+		width: 1550px;
+		margin: 0 auto;
+	}
+}
+
 hr{
 	background-color: black;
 	border: none;

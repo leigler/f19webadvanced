@@ -2,6 +2,58 @@ window.onload = function(){
 
 	var contents = [
 		{
+			day: "Javascript Basics, Pt 2: While loops, Template literals, and the Math object",
+			list: [],
+			assignmentTitle : "",
+			sections: [
+				{
+					title: `While loops`,
+					paragraphs: [
+						"A while loop continues until its conditional is no longer true.",
+						`<pre><code>var i = 0;
+
+while (i < 10) {
+    console.log("The number is " + i);
+    i++;
+}</pre></code>
+`
+					]
+				},
+				{
+					title: `Template Literals`,
+					paragraphs: [
+						"template literals are an extension of the classic <code>'string'</code> that allow for embedded expressions:",
+							"Template literals are denoted with the back-tick: <code>` template literal `</code>",
+							`<pre><code>var title = "My Website Title";
+var content = "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.";
+
+var myVariable = &#96;
+
+ &lt;div>
+	&lt;h1>&#36;{title}&lt;/h1>
+	&lt;p>&#36;{content}&lt;/p>
+ &lt;/div>
+
+&#96;
+</code></pre>`,
+					]
+				},
+				{
+					title: `Javascript&rsquo;s Math object`,
+					paragraphs: [
+						"The javascript Math object* allows you to perform mathematical tasks on numbers.",
+						"*javascript’s Math object is a built-in object that has properties and methods for mathematical constants and functions. Not a function object (we will go over what objects are in a later lecture).",
+						"Random Method:<br><code>Math.random()</code> Generates a random number between 0 and 1.<br>In order to generate a random number between 0 and 10: <code>Math.random() * 10</code>.",
+						`Rounding Method:
+						<br><code>Math.round(3.7);</code> Rounds input to nearest integer, in this case 4.
+						<br><code>Math.ceil(8.3);</code> Rounds up to the smallest integer greater than or equal to our input, in this case 9.
+						<br><code>Math.floor(8.3);</code>Rounds down to the largest integer less than or equal to our input, in this case 8.`,
+						"In order to generate a random integer between 0 and 10:<br><code>Math.floor(Math.random() * 10)</code>"
+					]
+				}
+			]
+		},
+		{
 			day: "Javascript Basics, Pt 1: Variables, the console, Conditionals, and Loops",
 			list: [],
 			assignmentTitle : "",
@@ -92,6 +144,7 @@ window.onload = function(){
 					title: "If Statements",
 					paragraphs: [
 					`<pre><code>if( true ){ 
+		}
 	// do something
 }</code></pre>`,
 					`<pre><code>if( true ){

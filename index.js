@@ -2,6 +2,20 @@ window.onload = function(){
 
 	var contents = [
 		{
+			day: "Friday, September 13",
+			list: [
+				`<a target="_blank" href="https://docs.google.com/spreadsheets/d/17x37V9wdFWnQLyZS9iHwZPquyVj36RixKa6eixHFVOU/edit?usp=sharing">Assignment 1 (Index) Spreadsheet</a>`,
+				`Assignment 2, Pattern Readings`,
+				`Assignment 2, Pattern Review`,
+				`Lecture: <a href="lectures/index.html">Javascript loops, DOM, and template literals</a>`,
+				`Nesting patterns, work session`
+			],
+			assignmentTitle: "<a href='assignments/index.html'>Assignment 2, Pattern Week 2</a>",
+			assignment : [
+				`For next week, please evolve your pattern into a more complex nested set of elements. You should also convert your strings into template literals.`
+			]
+		},
+		{
 			day: "Friday, September 06",
 			list: [
 				`Github Setup`,
@@ -10,7 +24,7 @@ window.onload = function(){
 				`Exercise: <a href="exercises/index.html">Javascript Loops</a>`,
 				`Assignment 1: Reading and Project Review`
 			],
-			assignmentTitle : "Assignment 2, Pattern",
+			assignmentTitle : "<a href='assignments/index.html'>Assignment 2, Pattern (Week 1)</a>",
 
 			assignment: [
 				`Duration: 4 weeks`,
