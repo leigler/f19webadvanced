@@ -4,7 +4,7 @@ window.onload = function(){
 		{
 			day: "Javascript Basics, Pt 2: While loops, Template literals, and the Math object",
 			list: [],
-			assignmentTitle : `<a target="_blank" href="../files/_f19-sept-13.zip">Lecture Files</a>`,
+			assignmentTitle : `<a target="_blank" href="../files/f19-sept-13.zip">Lecture Files</a>`,
 			sections: [
 				{
 					title: `While loops`,
