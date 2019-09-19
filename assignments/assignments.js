@@ -7,6 +7,14 @@ window.onload = function(){
 			assignmentTitle : "",
 			sections: [
 				{
+					title: `Week 3 (for Sept 27)`,
+					paragraphs: [
+						`For next week, please evolve your pattern to animate using either <code>setTimeout</code> or <code>setInterval</code>. Consider how the introduction of movement influences your pattern&rsquo;s reveal.`,
+						`Will you introduce easing via the css <code>transition</code> or <code>@keyframe</code> attributes? Will the site animate as it fills or will individual units animate on their own?`,
+						`How will your animation influence how we understand the window&rsquo;s spatial dimensions?`
+					]
+				},
+				{
 					title: `Week 2 (for Sept 20)`,
 					paragraphs: [
 					`For next week, please evolve your pattern into a more complex nested set of elements. You should also convert your strings into template literals.`

@@ -135,3 +135,31 @@ pre code{
 	white-space: pre-wrap;
 	word-break: break-all;
 }
+
+
+.banner{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	color: #00b078;
+	background-color: black;
+}
+
+.banner h1{
+	font-size: 2rem;
+	text-align: center;
+}
+
+.banner h1 a{
+	font-size: 2rem;
+	line-height: 2rem;
+	background-color: #00b078;
+}
+
+.banner a{
+	color: white;
+}

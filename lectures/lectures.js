@@ -2,6 +2,17 @@ window.onload = function(){
 
 	var contents = [
 		{
+			day: "Javascript Basics, Pt 3: functions, setTimeout, and setInterval looping",
+			list: [],
+			assignmentTitle : `<a target="_blank" href="../files/f19-sept-20.zip">Lecture Files</a>`,
+			sections: [
+				{
+					title: `<a target="_blank" href="https://youtu.be/cNRsDMX207M">Live Stream @ 9am</a>`,
+					paragraphs : []
+				}
+			]
+		},
+		{
 			day: "Javascript Basics, Pt 2: While loops, Template literals, and the Math object",
 			list: [],
 			assignmentTitle : `<a target="_blank" href="../files/f19-sept-13.zip">Lecture Files</a>`,

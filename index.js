@@ -2,6 +2,20 @@ window.onload = function(){
 
 	var contents = [
 		{
+			day: "Friday, September 20",
+			list: [
+				`Today&rsquo;s lecture will be held of campus due to the due to the <a target="_blank" href="https://strikewithus.org/nyc/">New York City Climate Strike</a>.`,
+				`Optional Meetings times can be scheduled via this <a target="_blank" href="https://docs.google.com/spreadsheets/d/15IOcFj6DlNIYCaPBYq3K53nJk_2Miybisesj1c5KkCw/edit?usp=sharing">sheet</a>.`,
+				`Lecture: <a href="lectures/index.html">Javascript functions, setTimeout, setInterval</a>, full <a target="_blank" href="files/f19-sept-20.zip">lecture files</a>.`,
+			],
+			assignmentTitle: "<a href='assignments/index.html'>Assignment 2, Pattern Week 3</a>",
+			assignment : [
+				`For next week, please evolve your pattern to animate using either <code>setTimeout</code> or <code>setInterval</code>. Consider how the introduction of movement influences your pattern&rsquo;s reveal.`,
+				`Will you introduce easing via the css <code>transition</code> or <code>@keyframe</code> attributes? Will the site animate as it fills or will individual units animate on their own?`,
+				`How will your animation influence how we understand the window&rsquo;s spatial dimensions?`
+			]
+		},
+		{
 			day: "Friday, September 13",
 			list: [
 				`<a target="_blank" href="https://docs.google.com/spreadsheets/d/17x37V9wdFWnQLyZS9iHwZPquyVj36RixKa6eixHFVOU/edit?usp=sharing">Assignment 1 (Index) Spreadsheet</a>`,
@@ -58,6 +72,75 @@ window.onload = function(){
 	];
 
 	var resources = [
+		{
+			title: "Students",
+			list: [
+				{
+					title: "Jayin Xu", 
+					link: "https://jayinx.github.io/Assignment1/"
+				},
+				{
+					title: "Aira Dolfo", 
+					link: "https://dolfa226.github.io/web_advanced_index/"
+				},
+				{
+					title: "Scarlet Li", 
+					link: "https://lis874.github.io/web_advanced_index/"
+				},
+				{
+					title: "Maddie Lee", 
+					link: "https://leeh779.github.io/assignment-1/index.html"
+				},
+				{
+					title: "Phoebe Tseng", 
+					link: "https://tsenp811.github.io/phoebet_webadvancedjavascript/"
+				},
+				{
+					title: "Juna Lee", 
+					link: "https://leej869.github.io/Assignment_1/"
+				},
+				{
+					title: "ZiJia Chen", 
+					link: "http://b.parsons.edu/~chenz352/webadvanced/"
+				},
+				{
+					title: "Yeji Kim", 
+					link: "https://javascript-index.glitch.me"
+				},
+				{
+					title: "Vlora Bajrushi", 
+					link: "https://bajrushivlora.github.io/Assignment-One-/"
+				},
+				{
+					title: "Elliot Bohlen", 
+					link: "https://elliotbohlen.github.io/assn1/homepage/"
+				},
+				{
+					title: "Bernadette Figueroa", 
+					link: "https://berniefigs.github.io/web_advanced/index.html"
+				},
+				{
+					title: "Ricky Xie", 
+					link: "https://xier892.github.io"
+				},
+				{
+					title: "Yu-Ying Lee", 
+					link: "https://leey611.github.io/web_assignment1/"
+				},
+				{
+					title: "Alicia (Yuting) Pan", 
+					link: "https://alic3579.github.io/index/"
+				},
+				{
+					title: "Michael Braverman", 
+					link: "http://mbrav.com/2019.js/"
+				},
+				{
+					title: "Connie XU", 
+					link: "https://xuc009.github.io/assignment-1-index/index.html"
+				}
+			]
+		},
 		{
 			title: "Resources",
 			list: [
