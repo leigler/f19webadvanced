@@ -199,7 +199,7 @@ window.onload = function(){
 			list: [
 				{
 					title: "Class Syllabus",
-					link: "https://arena-attachments.s3.amazonaws.com/4925664/a211189c7746cf80e8af048666ca405d.pdf?1567176390"
+					link: "files/PSAM_3210_A_EIGLER-HARDING_FA19.pdf"
 				},
 				{
 					title: "Are.na Channel (Readings + Resources)",
