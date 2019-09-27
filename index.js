@@ -2,6 +2,25 @@ window.onload = function(){
 
 	var contents = [
 		{
+			day: "Friday, September 27",
+			list: [
+			`Assignment 2, Walk around`,
+			`Lecture: <a href="lectures/index.html">Javascript DOM Manipulation, querySelectors, eventListeners, and Libraries</a>`,
+			`Exercise: <a href="exercises/index.html">Additive Interface</a>`],
+			assignmentTitle: "<a href='assignments/index.html'>Assignment 2, Pattern Week 4</a>",
+			assignment: [
+				`For next week you will evolve your pattern to its final form by introducing at least two interactive elements.`,
+				`These interactive elements should utilize the eventListeners or inline functions reviewed in class and should allow your pattern to transcend into an experimental interface:`,
+				`Questions to consider include:
+				<ul>
+				<li>Does the pattern itself exist as an interface, or is the interface layered on top of it?</li>
+				<li>Can we see the entire interface, or is it somehow embedded in our interaction with the site (i.e. does the interface consist of buttons or does our scroll produce a direct response)?</li>
+				<li>How might the interface question our expectations?</li>
+				<li>What about the pattern is revealed to the user through their interaction?</li>
+				</ul>`
+			]
+		},
+		{
 			day: "Friday, September 20",
 			list: [
 				`Today&rsquo;s lecture will be held of campus due to the due to the <a target="_blank" href="https://strikewithus.org/nyc/">New York City Climate Strike</a>.`,
@@ -225,6 +244,5 @@ window.onload = function(){
 		document.querySelector("#root").innerHTML += `${Site.Resources(resource)}`;
 	})
 
-	
 
 }

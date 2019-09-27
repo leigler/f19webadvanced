@@ -7,6 +7,20 @@ window.onload = function(){
 			assignmentTitle : "",
 			sections: [
 				{
+					title: `Week 4 (for Oct 4)`,
+					paragraphs: [
+					`For next week you will evolve your pattern to its final form by introducing at least two interactive elements.`,
+				`These interactive elements should utilize the eventListeners or inline functions reviewed in class and should allow your pattern to transcend into an experimental interface:`,
+				`Questions to consider include:
+				<ul>
+				<li>Does the pattern itself exist as an interface, or is the interface layered on top of it?</li>
+				<li>Can we see the entire interface, or is it somehow embedded in our interaction with the site (i.e. does the interface consist of buttons or does our scroll produce a direct response)?</li>
+				<li>How might the interface question our expectations?</li>
+				<li>What about the pattern is revealed to the user through their interaction?</li>
+				</ul>`
+				]
+				},
+				{
 					title: `Week 3 (for Sept 27)`,
 					paragraphs: [
 						`For next week, please evolve your pattern to animate using either <code>setTimeout</code> or <code>setInterval</code>. Consider how the introduction of movement influences your pattern&rsquo;s reveal.`,
@@ -29,7 +43,7 @@ window.onload = function(){
 				{
 					title: `Brief`,
 					paragraphs: [
-					`Duration: 4 weeks`,
+					`Duration: 5 weeks`,
 				`Readings:<br /><a target="_blank" href="https://s3.amazonaws.com/2b.andydayton.com/readings/molnar-aesthetic.pdf">
 					Toward Aesthetic Guidelines for Paintings with the aid of a Computer</a> by <a target="_blank" href="https://www.are.na/daniel-lefcourt/monograph-vera-molnar">Vera Molnar</a>
 					<br />

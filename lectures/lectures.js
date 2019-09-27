@@ -2,6 +2,144 @@ window.onload = function(){
 
 	var contents = [
 		{
+			day: "Javascript: DOM Manipulation, querySelectors, eventListeners, and Libraries",
+			list: [],
+			assignmentTitle: `<!-- <a target="_blank" href="../files/f19-sept-27.zip">Lecture Files</a> -->`,
+			sections : [
+				{
+					title: "querySelectors",
+					paragraphs: [
+						`JavaScript methods are actions that can be performed on objects.`,
+						`getElementById is performed on the document object:<br>
+							<code>var element = document.getElementById(id);</code><br>
+							where getElementById is a method that returns an element object.
+						`, 
+						`getElementsByClassName is another method:<br>
+						<code>var elements = document.getElementsByClassName(class);</code><br>
+						getElementsByClassName returns an array of element objects by class.`, 
+						`querySelector utilizes any CSS selector (element, id, class) to select the first returned Element object:<br>
+						<code>var element = document.querySelector(div#anId);</code><br>
+						<code>var element = document.querySelector(body);</code>
+						<code>var element = document.querySelector(h1.primary_header);</code>
+						`, 
+						`querySelectorAll also utilizes any CSS selector but returns an array of matching element objects:<br>
+							<code>var elements = document.querySelector(p.my_content);</code><br>
+						`]
+				},
+				{
+					title: "eventListeners",
+					paragraphs : [
+					`The <code>addEventListener()</code> method introduces interactivity to elements on the page. Below are a few examples:`,
+				
+					`For example, a click event: 
+					<pre><code>var myButton = document.getElementById("my_button");
+
+myButton.addEventListener("click", function(){
+	console.log("doing stuff")
+})
+</code></pre>
+You can also abstract this function (which also allows you to remove the EventListener):
+<pre><code>var myButton = document.getElementById("my_button");
+
+var doingStuff = function(){
+	console.log("doing stuff")
+	myButton.removeEventListener("click", doingStuff)
+}
+
+myButton.addEventListener("click", doingStuff)
+
+					</code></pre>`,
+'A few more eventListeners include:', 
+`Mouseover:<pre><code>var myButton = document.getElementById("my_button");
+
+myButton.addEventListener("mouseover", function(){
+	console.log("mouse has entered button")
+})
+</code></pre>`,
+`Mouseout:<pre><code>var myButton = document.querySelector("#my_button");
+
+myButton.addEventListener("mouseout", function(){
+	console.log("mouse has left button")
+})
+</code></pre>`,
+`Mousemove (here we call the entire window):
+<pre><code>window.addEventListener("mousemove", function(){
+	console.log("mouse is moving on the screen")
+})
+</code></pre>`,
+`Scrolling:
+<pre><code>var DOM = document.querySelector("body");
+
+var scrolling = function(){
+
+  console.log(window.scrollY) // how far down the document we've scrolled
+
+};
+
+window.addEventListener("scroll", scrolling)
+</code></pre>
+
+`,
+`Scrolling (percentage):
+<pre><code>var DOM = document.querySelector("body");
+
+var scrolling = function(){
+
+  console.log(window.scrollY) // how far down the document we've scrolled
+  console.log(window.innerHeight) // the height of our browser window
+  console.log(DOM.offsetHeight) // the height of our body element
+
+  // percentage of scroll:
+  var percentageScrolled = window.scrollY / (DOM.offsetHeight - window.innerHeight);
+  console.log(percentageScrolled);
+
+};
+
+window.addEventListener("scroll", scrolling)
+</code></pre>
+
+`, 
+`Scrolling to a specific point:<br>
+Using the <code>getBoundingClientRect()</code> method, we can retrieve certain qualities of a given element.
+<pre><code>var checkpoint = document.getElementById("#checkpoint");
+
+var scrolling = function(){
+  if(checkpoint.getBoundingClientRect().top + checkpoint.getBoundingClientRect().height < 0) {
+	console.log("whole element is past!");
+  }else if(checkpoint.getBoundingClientRect().top < 0) {
+	console.log("top has past!");
+  }
+};
+
+window.addEventListener("scroll", scrolling)
+</code></pre>
+
+`]
+				},
+				{
+					title: "Inline Events",
+					paragraphs: [
+					`In addition to eventListeners, you can also call functions inline:
+					<br>Javascript:
+					<pre><code>var rotation = function(element){
+  console.log(element);
+  element.style.color = "red";
+
+}</code></pre>
+					HTML:
+					<pre><code>&lt;button onclick="rotation(this)">Click Me&lt;/button></code></pre>`
+					]
+				},
+				{
+					title: "Exercise",
+					paragraphs: [
+					`Create a simple interface consisting of a single button.`,
+					`The button itself should have a click EventListener that adds additional elements to the site. <i>The site as a whole</i> should have at least two additional EventListeners (mousemove, mouseover, scroll, etc) for a total of three interactive features.`
+					]
+				}
+			]
+		},
+		{
 			day: "Javascript Basics, Pt 3: functions, setTimeout, and setInterval looping",
 			list: [],
 			assignmentTitle : `<a target="_blank" href="../files/f19-sept-20.zip">Lecture Files</a>`,

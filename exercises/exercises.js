@@ -2,6 +2,15 @@ window.onload = function(){
 
 	var contents = [
 		{
+			day: "Exercise for Friday, September 27",
+			list: [],
+			assignmentTitle : "Additive Interface",
+			assignment: [
+				`Create a simple interface consisting of a single button.`,
+				`The button itself should have a <code>click</code> EventListener that appends new elements to the site. <i>The site as a whole</i> should have at least two additional EventListeners (<code>mousemove</code>, <code>mouseover</code>, <code>scroll</code>, etc) for a total of three interactive features.`
+			]
+		},
+		{
 			day: "Exercise for Friday, September 06",
 			list: [],
 			assignmentTitle : "For Loop",
