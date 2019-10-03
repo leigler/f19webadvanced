@@ -6,6 +6,7 @@ window.onload = function(){
 			list: [
 			`Assignment 2, Walk around`,
 			`Lecture: <a href="lectures/index.html">Javascript DOM Manipulation, querySelectors, eventListeners, and Libraries</a>`,
+			`Lecture Files: <a target="_blank" href="files/f19-sept-27.zip">f19-sept-27.zip</a>`,
 			`Exercise: <a href="exercises/index.html">Additive Interface</a>`],
 			assignmentTitle: "<a href='assignments/index.html'>Assignment 2, Pattern Week 4</a>",
 			assignment: [

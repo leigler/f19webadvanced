@@ -4,7 +4,7 @@ window.onload = function(){
 		{
 			day: "Javascript: DOM Manipulation, querySelectors, eventListeners, and Libraries",
 			list: [],
-			assignmentTitle: `<!-- <a target="_blank" href="../files/f19-sept-27.zip">Lecture Files</a> -->`,
+			assignmentTitle: `<a target="_blank" href="../files/f19-sept-27.zip">Lecture Files</a>`,
 			sections : [
 				{
 					title: "querySelectors",
