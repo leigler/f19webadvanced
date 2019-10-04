@@ -7,6 +7,18 @@ window.onload = function(){
 			assignmentTitle : "",
 			sections: [
 				{
+					title: `Finalize: Week 5 (for Oct 11)`,
+					paragraphs: [
+					`For next week, finalize your pattern and it&rsquo;s interface. You should prepare to demo your pattern to the class.`,
+					`In planning your demo, consider:
+					<ul>
+						<li>How you might successfully show the different aspects of your pattern&rsquo;s interface.</li>
+						<li>How you might communicate what you were interested in originally and how the pattern has evolved.</li>
+					</ul>`,
+					`Be prepared to navigate to your pattern from your github Index page. You will demo your pattern on it&rsquo;s own—<i>there is no need to make a presentation document.</i>`
+					]
+				},
+				{
 					title: `Week 4 (for Oct 4)`,
 					paragraphs: [
 					`For next week you will evolve your pattern to its final form by introducing at least two interactive elements.`,

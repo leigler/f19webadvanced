@@ -51,10 +51,9 @@ Site.Resources = function(resources){
 		resourcelist += `<li><a target="_blank" href="${listitem.link}">${listitem.title}</a></li>`;
 	})
 
-	return `<section>
+	return `<section class="resources" >
 		<h2>${resources.title}</h2>
 		<ul>${resourcelist}</ul>
-		<hr />
 	</section>`;
 
 }

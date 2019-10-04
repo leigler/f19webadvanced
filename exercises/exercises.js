@@ -2,6 +2,15 @@ window.onload = function(){
 
 	var contents = [
 		{
+			day: "Exercise for Friday, October 4",
+			list: [],
+			assignmentTitle: "JS Libraries",
+			assignment: [
+				`Experiment with one of the libraries listed (including the libraries we used in class), and make a small sketch to share with the class.`,
+				`Select a library that you find interesting or that might serve an endgoal and explore its documentation—if it has demos, try and recreate them (and then expand on them).`
+			]
+		},
+		{
 			day: "Exercise for Friday, September 27",
 			list: [],
 			assignmentTitle : "Additive Interface",

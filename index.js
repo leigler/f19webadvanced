@@ -2,6 +2,28 @@ window.onload = function(){
 
 	var contents = [
 		{
+			day: "Friday, October 4",
+			list: [
+				`Work Session + Check-in: Assignment 2`,
+				`Demo: Introduction to JavaScript Librarires`,
+				`Introduction: Javascript and asynchronous calls`,
+				`Demo Files: <a target="_blank" href="files/f19-oct-04.zip">f19-oct-04.zip</a>`,
+				`Exercise: <a href="exercises/index.html">JS Libraries</a>`
+			],
+			assignmentTitle: "<a href='assignments/index.html'>Assignment 2, Pattern Week 5</a>",
+			assignment: [
+				`For next week, finalize your pattern and it&rsquo;s interface. You should prepare to demo your pattern to the class.`,
+				`In planning your demo, consider:
+				<ul>
+					<li>How you might successfully show the different aspects of your pattern&rsquo;s interface.</li>
+					<li>How you might communicate what you were interested in originally and how the pattern has evolved.</li>
+				</ul>`,
+				`Be prepared to navigate to your pattern from your github Index page. You will demo your pattern on it&rsquo;s own—<i>there is no need to make a presentation document.</i>`,
+				`<span style="font-weight:bold;">For October 12</span>`,
+				`In addition to finalizing your Pattern, please take a moment to review the <a href="assignments/assignment3.html">Assignement 3 Brief</a> and complete Week 1.`
+			]
+		},
+		{
 			day: "Friday, September 27",
 			list: [
 			`Assignment 2, Walk around`,
@@ -93,6 +115,156 @@ window.onload = function(){
 
 	var resources = [
 		{
+			title: "Javascript Libraries",
+			list: [
+				{
+					title: "Greensock animation library",
+					link: "https://greensock.com/"
+				},
+				{
+					title: "Anime.js animation library",
+					link: "https://animejs.com/"
+				},
+				{
+					title: "Tone.js—browser-based music",
+					link: "https://tonejs.github.io/"
+				},
+				{
+					title: "jQuery",
+					link: "https://jquery.com/"
+				},
+				{
+					title: "Paper js—the vector library of the web",
+					link: "http://paperjs.org/"
+				},
+				{
+					title: "Fabric JS, html5 canvas library",
+					link: "http://fabricjs.com/"
+				},
+				{
+					title: "Easel js for html5 canvas",
+					link: "http://www.createjs.com/easeljs"
+				},
+				{
+					title: "SVG Drawing Animations",
+					link: "https://tympanus.net/codrops/2013/12/30/svg-drawing-animation/"
+				},
+				{
+					title: "D3, data driven document manipulation",
+					link: "https://d3js.org/"
+				},
+				{
+					title: "Bootstrap JS aids",
+					link: "https://getbootstrap.com/docs/3.3/javascript/"
+				},
+				{
+					title: "P5.js",
+					link: "https://p5js.org/"
+				},
+				{
+					title: "Three.js—a rendering library built off of webgl",
+					link: "https://threejs.org/"
+				},
+				{
+					title: "Sticky-kit scrolling aid",
+					link: "http://leafo.net/sticky-kit/"
+				},
+				{
+					title: "Scrollmagic animations",
+					link: "http://scrollmagic.io/"
+				},
+				{
+					title: "AOS scroll animation library",
+					link: "https://michalsnik.github.io/aos/"
+				},
+				{
+					title: "Flickity slideshow",
+					link: "https://flickity.metafizzy.co/"
+				},
+				{
+					title: "Masonry responsive grid",
+					link: "https://masonry.desandro.com/"
+				},
+				{
+					title: "Showdown, a JS markdown parser",
+					link: "https://github.com/showdownjs/showdown"
+				},
+				{
+					title: "Voca JS string manipulation",
+					link: "https://vocajs.com/"
+				},
+				{
+					title: "Two.js—a js driven drawing library",
+					link: "https://two.js.org/"
+				},
+				{
+					title: "Vivus.js an svg drawing library",
+					link: "https://maxwellito.github.io/vivus/"
+				},
+				{
+					title: "Parallax.js a simple parallax library",
+					link: "http://matthew.wagerfield.com/parallax/"
+				},
+				{
+					title: "Parallax.js another simple parallax library",
+					link: "http://pixelcog.github.io/parallax.js/"
+				},
+			]
+		},
+		{
+			title: "Web Development Resources",
+			list: [
+				{
+					title: "W3Schools",
+					link: "https://www.w3schools.com"
+				},
+				{
+					title: "Stack Overflow",
+					link: "https://stackoverflow.com"
+				},
+				{
+					title: "Learn CSS Layout",
+					link: "http://learnlayout.com/"
+				},
+				{
+					title: "Learn to Code HTML & CSS",
+					link: "https://learn.shayhowe.com"
+				},
+				{
+					title: "Code Academy: Learn HTML",
+					link: "https://www.codecademy.com/learn/learn-html"
+				},
+				{
+					title: "Code Academy: Learn CSS",
+					link: "https://www.codecademy.com/learn/learn-css"
+				},
+				{
+					title: "Code Academy: Learn Javascript",
+					link: "https://www.codecademy.com/learn/learn-javascript"
+				},
+				{
+					title: "Code Academy: Learn jQuery",
+					link: "https://www.codecademy.com/learn/learn-jquery"
+				},
+				{
+					title: "Dev Docs",
+					link: "https://devdocs.io"
+				},
+				{
+					title: "Shapes of CSS",
+					link: "https://css-tricks.com/the-shapes-of-css/"
+				},
+				{
+					title: "Centering in CSS Guide",
+					link: "https://css-tricks.com/centering-css-complete-guide/"
+				},
+				{
+					title: "Guide to Flexbox",
+					link: "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+				}
+			]
+		},
+		{
 			title: "Students",
 			list: [
 				{
@@ -158,59 +330,6 @@ window.onload = function(){
 				{
 					title: "Connie XU", 
 					link: "https://xuc009.github.io/assignment-1-index/index.html"
-				}
-			]
-		},
-		{
-			title: "Resources",
-			list: [
-				{
-					title: "W3Schools",
-					link: "https://www.w3schools.com"
-				},
-				{
-					title: "Stack Overflow",
-					link: "https://stackoverflow.com"
-				},
-				{
-					title: "Learn CSS Layout",
-					link: "http://learnlayout.com/"
-				},
-				{
-					title: "Learn to Code HTML & CSS",
-					link: "https://learn.shayhowe.com"
-				},
-				{
-					title: "Code Academy: Learn HTML",
-					link: "https://www.codecademy.com/learn/learn-html"
-				},
-				{
-					title: "Code Academy: Learn CSS",
-					link: "https://www.codecademy.com/learn/learn-css"
-				},
-				{
-					title: "Code Academy: Learn Javascript",
-					link: "https://www.codecademy.com/learn/learn-javascript"
-				},
-				{
-					title: "Code Academy: Learn jQuery",
-					link: "https://www.codecademy.com/learn/learn-jquery"
-				},
-				{
-					title: "Dev Docs",
-					link: "https://devdocs.io"
-				},
-				{
-					title: "Shapes of CSS",
-					link: "https://css-tricks.com/the-shapes-of-css/"
-				},
-				{
-					title: "Centering in CSS Guide",
-					link: "https://css-tricks.com/centering-css-complete-guide/"
-				},
-				{
-					title: "Guide to Flexbox",
-					link: "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
 				}
 			]
 		},
