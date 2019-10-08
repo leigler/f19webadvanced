@@ -32,9 +32,122 @@ Teevan</li>
 		},
 	];
 
+	var libraries = [
+	{
+		title: "Javascript Libraries",
+		list: [
+				{
+					title: "Greensock animation library",
+					link: "https://greensock.com/"
+				},
+				{
+					title: "Anime.js animation library",
+					link: "https://animejs.com/"
+				},
+				{
+					title: "Tone.js—browser-based music",
+					link: "https://tonejs.github.io/"
+				},
+				{
+					title: "jQuery",
+					link: "https://jquery.com/"
+				},
+				{
+					title: "Paper js—the vector library of the web",
+					link: "http://paperjs.org/"
+				},
+				{
+					title: "Fabric JS, html5 canvas library",
+					link: "http://fabricjs.com/"
+				},
+				{
+					title: "Easel js for html5 canvas",
+					link: "http://www.createjs.com/easeljs"
+				},
+				{
+					title: "SVG Drawing Animations",
+					link: "https://tympanus.net/codrops/2013/12/30/svg-drawing-animation/"
+				},
+				{
+					title: "D3, data driven document manipulation",
+					link: "https://d3js.org/"
+				},
+				{
+					title: "Bootstrap JS aids",
+					link: "https://getbootstrap.com/docs/3.3/javascript/"
+				},
+				{
+					title: "P5.js",
+					link: "https://p5js.org/"
+				},
+				{
+					title: "Three.js—a rendering library built off of webgl",
+					link: "https://threejs.org/"
+				},
+				{
+					title: "Sticky-kit scrolling aid",
+					link: "http://leafo.net/sticky-kit/"
+				},
+				{
+					title: "Scrollmagic animations",
+					link: "http://scrollmagic.io/"
+				},
+				{
+					title: "AOS scroll animation library",
+					link: "https://michalsnik.github.io/aos/"
+				},
+				{
+					title: "Flickity slideshow",
+					link: "https://flickity.metafizzy.co/"
+				},
+				{
+					title: "Masonry responsive grid",
+					link: "https://masonry.desandro.com/"
+				},
+				{
+					title: "Showdown, a JS markdown parser",
+					link: "https://github.com/showdownjs/showdown"
+				},
+				{
+					title: "Voca JS string manipulation",
+					link: "https://vocajs.com/"
+				},
+				{
+					title: "Two.js—a js driven drawing library",
+					link: "https://two.js.org/"
+				},
+				{
+					title: "Vivus.js an svg drawing library",
+					link: "https://maxwellito.github.io/vivus/"
+				},
+				{
+					title: "Parallax.js a simple parallax library",
+					link: "http://matthew.wagerfield.com/parallax/"
+				},
+				{
+					title: "Parallax.js another simple parallax library",
+					link: "http://pixelcog.github.io/parallax.js/"
+				},
+			]
+		},
+		{
+			title: "Javascript APIs",
+			list: [
+				{
+					title: "Public APIs",
+					link: "https://github.com/public-apis/public-apis"
+				}
+			]
+		}
+	]
+
 
 	contents.forEach(function(content){
 		document.querySelector("#root").innerHTML += `${Site.lectureContent(content)}`
+	})
+
+	libraries.forEach(function(resource){
+		document.querySelector("#root").innerHTML += `${Site.Resources(resource)}`;
 	})
 
 }
