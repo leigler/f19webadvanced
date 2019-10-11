@@ -1,0 +1,45 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body, html{
+	width: 100%;
+	overflow-x: hidden;
+	font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li{
+	font-size: 1rem;
+	line-height: 2rem;
+	font-weight: normal;
+}
+
+
+.notes{
+	display: inline-block;
+	width: calc(100%/8);
+	box-sizing: border-box;
+	border: solid 1px black;
+	height: 90vh;
+	border-radius: 0.5rem;
+}
+
+
+.halfnotes{
+	position: absolute;
+	top: 2rem;
+	z-index: 100;
+	width: calc(100%/16);
+	box-sizing: border-box;
+	height: 60vh;
+	background-color: rgba(0,0,0,0.8);
+	border: solid 1px black;
+	border-radius: 0.5rem;
+}
+
+#c-sharp{ left: 9.375%; }
+#e-flat{ left: calc(100%/8 + 9.375%); }
+#f-sharp{ left: calc((3*100%/8) + 9.375%); }
+#a-flat{ left: calc((4*100%/8) + 9.375%); }
+#b-flat{ left: calc((5*100%/8) + 9.375%); }
