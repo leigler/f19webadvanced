@@ -13,7 +13,7 @@ window.onload = function(){
 					paragraphs: [
 						`Based on your conversations in class today, please select a design direction and begin building it out.`,
 						`Your assignment for next week consists of two parts: <br>1. Build out your chosen design with the javascript library of your choosing. You should use this opportunity to experiment with the library. Since you&rsquo;re working with an unfamiliar library, expect your building process to be fluid. For next week, your &ldquo;front-end&rdquo; should be well underway and ready for integration with your API.`,
-						`2. Write a small sketch using this boilerplate to successfully fetch data from your chosen API. This does not yet need to be integrated, but should <code>console.log()</code> the data you will use in this project. Remember to use a local server <code>php -S 127.0.0.1:8000/</code> (or glitch) to properly fetch your data.`,
+						`2. Write a small sketch using this <a href="../files/f19-oct-11/boilerplate-fetch.zip">boilerplate</a> to successfully fetch data from your chosen API. This does not yet need to be integrated, but should <code>console.log()</code> the data you will use in this project. Remember to use a local server <code>php -S 127.0.0.1:8000/</code> (or glitch) to properly fetch your data.`,
 						`Additionally, please read <a target="_blank" href="https://arena-attachments.s3.amazonaws.com/5225470/3b167a5b05fceecb01b620934e49e8a2.pdf?">The Policeman&rsquo;s Beard is Half Constructed</a><br>
 						<a target="_blank" href="http://www.cond.org/deception.pdf">Benevolent Deception in Human Computer Interaction</a> by Eytan Adar, Desney S. Tan, and Jaime Teevan`
 					]
