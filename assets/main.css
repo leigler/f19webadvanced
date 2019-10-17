@@ -176,3 +176,46 @@ pre code{
 		display: block;
 	}
 }
+
+
+.past_event:first-of-type{
+	margin-top: -4rem;
+}
+
+.hidden{
+	display: block;
+	cursor: pointer;
+}
+
+.hidden section{
+	position: relative;
+	pointer-events: none;
+}
+
+.hidden section *:not(h2):not(hr) {
+	display: none;
+}
+
+.hidden section h2{
+	margin-top: 0;
+	padding-top: 1.5rem;
+}
+
+.past_event section hr{
+	margin-top: 1.5rem;
+	margin-bottom: 0;
+}
+
+.hidden section:after{
+	content: "+";
+	text-align: center;
+	line-height: 2rem; 
+	position: absolute;
+	bottom: 1.25rem;
+	border-radius: 0.35rem;
+	right: 0;
+	width: 2rem;
+	height: 2rem;
+	background-color: #00b078;
+	color: white;
+}

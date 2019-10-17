@@ -11,7 +11,7 @@ window.onload = function(){
 				`Introduction: Javascript and asynchronous calls, APIs`,
 				`Demo Files: <a target="_blank" href="files/f19-oct-11/f19-oct-11-fetch.zip">f19-oct-11-fetch.zip</a>`,
 			],
-			assignmentTitle: `<a href="assignments/assignment3.html">Assignement 3, Week 2</a>`,
+			assignmentTitle: `<a href="assignments/assignment3.html">Assignment 3, Week 2</a>`,
 			assignment: [
 			`Based on your conversations in class today, please select a design direction and begin building it out.`,
 			`Your assignment for next week consists of two parts: <br>1. Build out your chosen design with the javascript library of your choosing. You should use this opportunity to experiment with the library. Since you&rsquo;re working with an unfamiliar library, expect your building process to be fluid. For next week, your &ldquo;front-end&rdquo; should be well underway and ready for integration with your API.`,
@@ -374,9 +374,21 @@ window.onload = function(){
 		}
 	]
 
-	contents.forEach(function(content){
-		document.querySelector("#root").innerHTML += `${Site.basicContent(content)}`
+	
+
+
+	contents.forEach(function(content, index){
+
+		if(index === 0 ){
+			document.querySelector("#root").innerHTML += `${Site.basicContent(content)}`
+		}else{
+			document.querySelector("#root").innerHTML += `<span class="past_event hidden" onclick="Site.openDrawer(event)">${Site.basicContent(content)}</span>`
+		}		
+
 	})
+
+
+
 
 	resources.forEach(function(resource){
 		document.querySelector("#root").innerHTML += `${Site.Resources(resource)}`;

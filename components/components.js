@@ -1,5 +1,21 @@
 var Site = {};
 
+
+Site.openDrawer = function(e){
+	if(!e.target.classList.contains("hidden")){
+		return;
+	}
+
+	document.querySelectorAll("span.past_event").forEach(function(thisday){
+		thisday.classList.add("hidden")
+	})
+
+	e.target.classList.remove("hidden")
+
+	e.target.scrollIntoView();
+}
+
+
 Site.basicContent = function(post){
 	
 	var listitems = "";

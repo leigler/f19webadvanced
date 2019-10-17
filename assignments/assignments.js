@@ -72,8 +72,13 @@ window.onload = function(){
 	];
 
 
-	contents.forEach(function(content){
-		document.querySelector("#root").innerHTML += `${Site.lectureContent(content)}`
+	contents.forEach(function(content, index){
+		
+		if(index === 0){
+			document.querySelector("#root").innerHTML += `<span onclick="Site.openDrawer(event)" class="past_event">${Site.lectureContent(content)}</span>`
+		}else{
+			document.querySelector("#root").innerHTML += `<span onclick="Site.openDrawer(event)" class="past_event hidden">${Site.lectureContent(content)}</span>`
+		}
 	})
 
 }
