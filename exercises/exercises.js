@@ -2,6 +2,16 @@ window.onload = function(){
 
 	var contents = [
 		{
+			day: "Exercise for Friday, Oct 18",
+			list : [],
+			assignmentTitle: "JS: Fetch and Libraries",
+			assignment: [
+				`Choose a city that you know intimately (maybe you&rsquo;ve visited it repeatedly, or you lived there for a time) and consider what you find visually unique about it. Using the <a href="../files/f19-oct-18.zip">demo boilerplate</a> we just examined, create a simple animation using the <a target="_blank" href="https://greensock.com/get-started/">TweenMax library</a> consisting of two DOM elements that responds to the weather conditions of this city.`,
+				`Helpful Commands:<br>
+				navigate to correct directory in terminal using <a target="_blank" href="https://github.com/0nn0/terminal-mac-cheatsheet#core-commands">these commands</a>.<br>To launch a local server in terminal: <code>php -S 127.0.0.1:8000</code>.`
+			]
+		},
+		{
 			day: "Exercise for Friday, October 4",
 			list: [],
 			assignmentTitle: "JS Libraries",
@@ -32,8 +42,15 @@ window.onload = function(){
 	];
 
 
-	contents.forEach(function(content){
-		document.querySelector("#root").innerHTML += `${Site.basicContent(content)}`
+	contents.forEach(function(content, index){
+
+		if(index === 0){
+			document.querySelector("#root").innerHTML += `<span onclick="Site.openDrawer(event)" class="past_event">${Site.basicContent(content)}</span>`
+		}else{
+			document.querySelector("#root").innerHTML += `<span onclick="Site.openDrawer(event)" class="past_event hidden">${Site.basicContent(content)}</span>`
+
+		}
+		
 	})
 
 }

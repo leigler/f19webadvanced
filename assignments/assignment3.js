@@ -9,6 +9,12 @@ window.onload = function(){
 			assignmentTitle : "",
 			sections: [
 				{
+					title: `Week 3`,
+					paragraphs: [
+					`In addition to incorporating the feedback you received today in class, for next week, please begin integrating your API into your front end. Consider which elements can start without your content and which need to wait for your request to finish.`
+					]
+				},
+				{
 					title: `Week 2`,
 					paragraphs: [
 						`Based on your conversations in class today, please select a design direction and begin building it out.`,
@@ -151,8 +157,8 @@ window.onload = function(){
 	]
 
 
-	contents.forEach(function(content){
-		document.querySelector("#root").innerHTML += `${Site.lectureContent(content)}`
+	contents.forEach(function(content, index){
+		document.querySelector("#root").innerHTML += `<span class="past_event" onclick="Site.openDrawer(event)">${Site.lectureContent(content)}</span>`
 	})
 
 	libraries.forEach(function(resource){

@@ -3,7 +3,6 @@ var runAnimation = function(){
 	console.log("running Greensock animation")
 	// green sock "Tweens" animations: 
 
-
 	// each tween has a target (selector), a time, and styles to changes:
 	TweenMax.to(".square", 0.5, {rotation: 360})
 

@@ -2,6 +2,17 @@ window.onload = function(){
 
 	var contents = [
 		{
+			day: "Friday, October 17",
+			list: [
+				`<a href="exercises/index.html">Demo: Javascript asynchronous calls, traversing Javascript Libraries</a>`,
+				`Assignment 3: Check-in and Questions`
+			],
+			assignmentTitle: `<a href="assignments/assignment3.html">Assignment 3, Week 3</a>`,
+			assignment: [
+				`In addition to incorporating the feedback you received today in class, for next week, please begin integrating your API into your front end. Consider which elements can start without your content and which need to wait for your request to finish.`
+			]
+		},
+		{
 			day: "Friday, October 11",
 			list: [
 				`Assignment 2: Pattern, Final Presentations`,
@@ -233,6 +244,10 @@ window.onload = function(){
 			title: "Web Development Resources",
 			list: [
 				{
+					title: "Terminal Core Commands",
+					link: "https://github.com/0nn0/terminal-mac-cheatsheet#core-commands"
+				},
+				{
 					title: "W3Schools",
 					link: "https://www.w3schools.com"
 				},
@@ -380,7 +395,7 @@ window.onload = function(){
 	contents.forEach(function(content, index){
 
 		if(index === 0 ){
-			document.querySelector("#root").innerHTML += `${Site.basicContent(content)}`
+			document.querySelector("#root").innerHTML += `<span class="past_event" onclick="Site.openDrawer(event)">${Site.basicContent(content)}</span>`
 		}else{
 			document.querySelector("#root").innerHTML += `<span class="past_event hidden" onclick="Site.openDrawer(event)">${Site.basicContent(content)}</span>`
 		}		

@@ -216,6 +216,10 @@ pre code{
 	right: 0;
 	width: 2rem;
 	height: 2rem;
-	background-color: #00b078;
+	background-color: black;
+	color: #00b078;
+}
+
+.hidden:hover section:after{
 	color: white;
 }
