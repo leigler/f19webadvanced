@@ -5,6 +5,7 @@ window.onload = function(){
 			day: "Friday, October 17",
 			list: [
 				`<a href="exercises/index.html">Demo: Javascript asynchronous calls, traversing Javascript Libraries</a>`,
+				`<a href="files/inclass-demo-boilerplate.zip">Demo In-class files</a>`,
 				`Assignment 3: Check-in and Questions`
 			],
 			assignmentTitle: `<a href="assignments/assignment3.html">Assignment 3, Week 3</a>`,
