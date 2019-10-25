@@ -9,6 +9,12 @@ window.onload = function(){
 			assignmentTitle : "",
 			sections: [
 				{
+					title: `Week 4`,
+					paragraphs: [
+					`For next week, finalize your site and be prepared to share.`
+					]
+				},
+				{
 					title: `Week 3`,
 					paragraphs: [
 					`In addition to incorporating the feedback you received today in class, for next week, please begin integrating your API into your front end. Consider which elements can start without your content and which need to wait for your request to finish.`

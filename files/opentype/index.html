@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js"></script>
+
+</head>
+<body>
+
+<canvas id="canvas" width="600px" height="600px"></canvas>
+
+<script type="text/javascript">
+		
+		// AUTHENTICSans-130.woff
+
+	opentype.load('opentype/AUTHENTICSans-130.woff', function(err, font) {
+    if (err) {
+        alert('Font could not be loaded: ' + err);
+    } else {
+        var ctx = document.getElementById('canvas').getContext('2d');
+        var path = font.getPath('Hello, World!', 0, 150, 72);
+
+        console.log(font.glyphs); // logs all the glyphs associated with this font
+
+        var E = font.glyphs.get(10); // get the letter E
+
+        E.draw(ctx, 100, 250, 60); // draw the letter E
+        console.log(E.getPath(100, 250, 60)) // log path
+
+        // If you just want to draw the text you can also use font.draw(ctx, text, x, y, fontSize).
+        path.draw(ctx);
+    }
+	});
+
+</script>
+</body>
+</html>

@@ -2,6 +2,16 @@ window.onload = function(){
 
 	var contents = [
 		{
+			day: "Friday, October 25",
+			list: [
+			`Individual Meetings + Mid-semester Check-in: <a target="_blank" href="https://docs.google.com/spreadsheets/d/1jTKlrkyuhjrX8OFAwRrEe7wHXFO9XP3pH8PuNWuPx14/edit?usp=sharing" >Sign up sheet</a>`
+			],
+			assignmentTitle: '<a href="assignments/assignment3.html">Assignment 3, Week 4</a>',
+			assignment: [
+				`For next week, finalize your site and be prepared to share.`
+			]
+		},
+		{
 			day: "Friday, October 17",
 			list: [
 				`<a href="exercises/index.html">Demo: Javascript asynchronous calls, traversing Javascript Libraries</a>`,
