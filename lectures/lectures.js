@@ -2,6 +2,91 @@ window.onload = function(){
 
 	var contents = [
 		{
+			day: "Javascript: localStorage",
+			list: [],
+			assignmentTitle: `<a target="_blank" href="../files/f19-nov-1.zip">Lecture Files</a>`,
+			sections : [
+				{
+					title: "What is localStorage?",
+					paragraphs: [
+						`<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API">localStorage</a> is a method of saving variables on a user&rsquo;s browser across visits.`,
+						`Our goal is to utilize the localStorage API in a way that augments or enhances a user&rsquo;s experience—and makes them think critically about how their interactions can be tracked.`,
+						`We also want to learn about uploading and downloading data—a behaviour that exists at the core of many web-based platforms`
+					]
+				},
+				{
+					title: "Logic",
+					paragraphs: [
+						`The localStorage API consists of several steps: <ul>
+						<li>Check if our browser can use localStorage</li>
+						<li>If it can, check if anything has already been saved.</li>
+						<li>If we already have variables saved in our localStorage, load them into the site.</li>
+						<li>If we do not have variables saved in our localStorage, continue with our "default" site status.</li>
+						<li>Upon user interaction, save variables to our localStorage.</li>
+						</ul>`,
+						`A quick side note: a user&rsquo;s total localStorage on mobile is 5mb, so be wary of what type of information (and the amount) you decide to save.`
+					]
+				},
+				{
+					title: "Commands",
+					paragraphs: [
+						`The localStorage API consists of the following commands:`,
+						`To get a localStorage item: <code>localStorage.getItem('NAMEOFITEM')</code><br>To set a localStorage item: <code>localStorage.setItem('NAMEOFITEM', 'value')</code><br>To delete a localStorage item: <code>localStorage.removeItem('NAMEOFITEM');</code><br>To delete all localStorage items for your webpage: <code>localStorage.clear();</code>`,
+						`To check whether an item already exists, you can simply put <code>localStorage.getItem()</code> into an if statement: <code>if(!localStorage.getItem('NAMEOFITEM')){ }</code>`,
+						`The localStorage API saves its values as strings, so in order to save an object or array, you will have to use <code>JSON.stringify(yourObject)</code> to convert your variable to a string and <code>JSON.parse(yourItem)</code> to retrieve the value.`,
+						`A very basic example (also explored in the demo file) consists of: <pre><code>if(!localStorage.getItem('color')){
+	// if color has been saved: 
+	var color = localStorage.getItem('color');
+
+	// apply color to element: 
+	document.getElementById("myDiv").style.color = color;
+}
+
+document.getElementById("myDiv").addEventListener('click', function(){
+	// when a user clicks on myDiv, produce a random color to save:
+
+	var red = Math.round(Math.random()*255);
+	var green = Math.round(Math.random()*255);
+	var blue = Math.round(Math.random()*255);
+
+	var newColor = "rgb(" + red + "," + green + "," + blue + ")";
+
+	localStorage.setItem('color', newColor); // save new color
+
+	// set new color to item:
+	document.getElementById("myDiv").style.color = newColor;
+
+})</code></pre>`,
+						`Additionally, we also have a function that checks whether localStorage is supported on the current browser which returns a boolean (true or false) which we can just copy and paste: <pre><code>function storageAvailable(type) {
+  var storage;
+  try {
+    storage = window[type];
+    var x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  }
+  catch(e) {
+    return e instanceof DOMException && (
+	    // everything except Firefox
+	    e.code === 22 ||
+      // Firefox
+      e.code === 1014 ||
+      // test name field too, because code might not be present
+      // everything except Firefox
+      e.name === 'QuotaExceededError' ||
+      // Firefox
+      e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
+      // acknowledge QuotaExceededError only if there's something already stored
+      (storage && storage.length !== 0);
+  }
+}
+</code></pre>`
+					]
+				}
+			]
+		},
+		{
 			day: "Javascript: DOM Manipulation, querySelectors, eventListeners, and Libraries",
 			list: [],
 			assignmentTitle: `<a target="_blank" href="../files/f19-sept-27.zip">Lecture Files</a>`,
@@ -33,6 +118,7 @@ window.onload = function(){
 				
 					`For example, a click event: 
 					<pre><code>var myButton = document.getElementById("my_button");
+		}
 
 myButton.addEventListener("click", function(){
 	console.log("doing stuff")

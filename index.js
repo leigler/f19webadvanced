@@ -2,6 +2,25 @@ window.onload = function(){
 
 	var contents = [
 		{
+			day: "Friday, November 1",
+			list: [
+				`Assignment 3, Review`,
+				`Assignment 4, Introduction`,
+				`Javascript and <a href="lectures/index.html">localStorage</a>`
+			],
+			assignmentTitle: '<a href="assignments/assignment4.html" >Assignment 4, Week 1</a>',
+			assignment: [
+				`Readings:<br>
+						<a target="_blank" href="http://www.bruno-latour.fr/sites/default/files/P-36-Berliner-KEY-GBpdf.pdf">The Berliner Key</a> by Bruno Latour<br>
+						<a target="_blank" href="https://jnd.org/affordances_and_design/">Affordances and Design</a> by Don Norman<br>
+						<a target="_blank" href="https://arena-attachments.s3.amazonaws.com/3476765/1b3df7e9a666ff9bd1eb2e24a1adaf2e.pdf?1548259343">Framing Thoughtless Acts</a> by Jane Fulton Suri<br>
+						`,
+				`For next week, please read all three of the readings and prepare a question for each. Additionally find an object that shapes how its users behave (in Latour’s words: find an object that is an actor, or in Suri’s and Norman’s words: an object that has affordances and produces thoughtless acts).`,
+				`Your object will act as the inspiration for this project, so feel free to photograph (or otherwise document) it, variations of it, and take time to learn about its history.`,
+				`Next week will be spent discussing these objects in the context of the readings, as well as exploring the localStorage API through an exercise.`
+			]
+		},
+		{
 			day: "Friday, October 25",
 			list: [
 			`Individual Meetings + Mid-semester Check-in: <a target="_blank" href="https://docs.google.com/spreadsheets/d/1jTKlrkyuhjrX8OFAwRrEe7wHXFO9XP3pH8PuNWuPx14/edit?usp=sharing" >Sign up sheet</a>`

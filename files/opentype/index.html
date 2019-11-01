@@ -10,26 +10,75 @@
 <canvas id="canvas" width="600px" height="600px"></canvas>
 
 <script type="text/javascript">
-		
-		// AUTHENTICSans-130.woff
+	
+    // pulled from the opentype.js site's code:
+    // you want to manipulate these 4 variables with your mousemove function below (I've gone ahead and attached snapX and snapY to your x and y coordinates, but you can finesse them more specifically):
+    var snapX = 0;
+    var snapY = 0;
+    var snapDistance = 53;
+    var snapStrength = 80;
 
-	opentype.load('opentype/AUTHENTICSans-130.woff', function(err, font) {
-    if (err) {
-        alert('Font could not be loaded: ' + err);
-    } else {
-        var ctx = document.getElementById('canvas').getContext('2d');
-        var path = font.getPath('Hello, World!', 0, 150, 72);
-
-        console.log(font.glyphs); // logs all the glyphs associated with this font
-
-        var E = font.glyphs.get(10); // get the letter E
-
-        E.draw(ctx, 100, 250, 60); // draw the letter E
-        console.log(E.getPath(100, 250, 60)) // log path
-
-        // If you just want to draw the text you can also use font.draw(ctx, text, x, y, fontSize).
-        path.draw(ctx);
+    // Round a value to the nearest "step".
+    function snap(v, distance, strength) {
+        return (v * (1.0 - strength)) + (strength * Math.round(v / distance) * distance);
     }
+
+    function doSnap(path) {
+        
+        var i;
+        var strength = snapStrength / 100.0;
+        for (i = 0; i < path.commands.length; i++) {
+            var cmd = path.commands[i];
+            if (cmd.type !== 'Z') {
+                cmd.x = snap(cmd.x + snapX, snapDistance, strength) - snapX;
+                cmd.y = snap(cmd.y + snapY, snapDistance, strength) - snapY;
+            }
+            if (cmd.type === 'Q' || cmd.type === 'C') {
+                cmd.x1 = snap(cmd.x1 + snapX, snapDistance, strength) - snapX;
+                cmd.y1 = snap(cmd.y1 + snapY, snapDistance, strength) - snapY;
+            }
+            if (cmd.type === 'C') {
+                cmd.x2 = snap(cmd.x2 + snapX, snapDistance, strength) - snapX;
+                cmd.y2 = snap(cmd.y2 + snapY, snapDistance, strength) - snapY;
+            }
+        }
+    }
+
+    // custom load function:
+	opentype.load('AUTHENTICSans-130.woff', function(err, font) {
+        if (err) {
+            alert('Font could not be loaded: ' + err);
+        } else {
+            var textToRender  = 'Hello, World!';
+            var fontSize = 72;
+
+            console.log(font.glyphs); // logs all the glyphs associated with this font
+
+            window.addEventListener('mousemove', function(e){
+                // console.log(e.clientX, e.clientY)
+
+                snapX = e.clientX;
+                snapY = e.clientY;
+
+                var options = {
+                    kerning: true,
+                    hinting: false,
+                    features: {
+                        liga: true,
+                        rlig: true
+                    }
+                };
+
+            snapPath = font.getPath(textToRender, 0, 200, fontSize, options);
+            doSnap(snapPath);
+            var snapCtx = document.getElementById('canvas').getContext('2d');
+            snapCtx.clearRect(0, 0, 940, 300);
+            snapPath.draw(snapCtx);
+
+            })
+
+
+        }
 	});
 
 </script>
