@@ -6,7 +6,7 @@ window.onload = function(){
 			list: [
 				`Assignment 3, Review`,
 				`Assignment 4, Introduction`,
-				`Javascript and <a href="lectures/index.html">localStorage</a>`
+				`<a href="lectures/index.html">Javascript and localStorage</a>, <a href="files/f19-nov-1-demo.zip">Demo files</a>`
 			],
 			assignmentTitle: '<a href="assignments/assignment4.html" >Assignment 4, Week 1</a>',
 			assignment: [

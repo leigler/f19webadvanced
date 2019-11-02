@@ -4,7 +4,7 @@ window.onload = function(){
 		{
 			day: "Javascript: localStorage",
 			list: [],
-			assignmentTitle: `<a target="_blank" href="../files/f19-nov-1.zip">Lecture Files</a>`,
+			assignmentTitle: `<a target="_blank" href="../files/f19-nov-1.zip">Lecture Files</a><br><a target="_blank" href="../files/f19-nov-1-demo.zip">Lecture Files from demo</a>`,
 			sections : [
 				{
 					title: "What is localStorage?",
