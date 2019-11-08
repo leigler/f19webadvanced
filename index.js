@@ -392,10 +392,6 @@ window.onload = function(){
 					link: "https://elliotbohlen.github.io/assn1/homepage/"
 				},
 				{
-					title: "Bernadette Figueroa", 
-					link: "https://berniefigs.github.io/web_advanced/index.html"
-				},
-				{
 					title: "Ricky Xie", 
 					link: "https://xier892.github.io"
 				},
