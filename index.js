@@ -2,6 +2,27 @@ window.onload = function(){
 
 	var contents = [
 		{
+			day: "Friday, November 8",
+			list: [
+				`Assignment 3, Final Critique 💻 🌐 📚`,
+				`Assignment 4: Reading Discussion and Object Sharing`,
+				`localStorage review`
+			],
+			assignmentTitle: '<a href="assignments/assignment4.html" >Assignment 4, Week 2</a>',
+			assignment: [
+				`For next week, prepare two design directions for your 
+				website that translate the affordances of your object into 
+				a digital interface. Consider the assignment-related readings, today&rsquo;s discussion,
+				and the feedback you received regarding your object. Within each design, make sure to consider which parts will utilize <code>localStorage</code> to customize a user&rsquo;s experience.`,
+				`Each direction should be composed of:<br>
+				<ul>
+					<li>A static mock-up (Adobe Illustrator or XD, Sketch, Figma, etc) outlining the affordances you&rsquo;re interested in, the overall layout, and user-flow.</li>
+				<li>A collection of small javascript sketches exploring how your object&rsquo;s affordances can translate into digital interactions.</li>
+				</ul>
+				<i>The following week will be spent developing one of the design directions and beginning to integrate localStorage functionality</i>.`
+			]
+		},
+		{
 			day: "Friday, November 1",
 			list: [
 				`Assignment 3, Review`,

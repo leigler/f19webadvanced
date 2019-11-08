@@ -9,7 +9,22 @@ window.onload = function(){
 			assignmentTitle : "",
 			sections: [
 				{
-					title: `Initial API Selection and Designs: Week 1 (for Nov 8)`,
+					title: `Design directions and javascript sketches: Week 2 (for Nov 15)`,
+					paragraphs: [
+					`For next week, prepare two design directions for your 
+					website that translate the affordances of your object into 
+					a digital interface. Consider the assignment-related readings, today&rsquo;s discussion,
+					and the feedback you received regarding your object. Within each design, make sure to consider which parts will utilize <code>localStorage</code> to customize a user&rsquo;s experience.`,
+					`Each direction should be composed of:<br>
+					<ul>
+						<li>A static mock-up (Adobe Illustrator or XD, Sketch, Figma, etc) outlining the affordances you&rsquo;re interested in, the overall layout, and user-flow.</li>
+					<li>A collection of small javascript sketches exploring how your object&rsquo;s affordances can translate into digital interactions.</li>
+					</ul>
+					<i>The following week will be spent developing one of the design directions and beginning to integrate localStorage functionality</i>.`
+				]
+				},
+				{
+					title: `Initial Object Selection: Week 1 (for Nov 8)`,
 					paragraphs: [
 					`For next week, please read all three of the readings and prepare a question for each. Additionally find an object that shapes how its users behave (in Latour’s words: find an object that is an actor, or in Suri’s and Norman’s words: an object that has affordances and produces thoughtless acts).`,
 					`Your object will act as the inspiration for this project, so feel free to photograph (or otherwise document) it, variations of it, and take time to learn about its history.`,
