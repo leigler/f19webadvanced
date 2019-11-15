@@ -16,7 +16,8 @@ window.onload = function(){
 					<li>An array of words or phrases that are selected and re-ordered on a canvas.</li>
 					<li>A simple drawing + erasing tool.</li>
 					<li>A cross-session stopwatch.</li>
-				</ul>`
+				</ul>`,
+				`A demo directory can be found <a href="../files/f19-nov-15.zip">here</a>`
 			]
 		},
 		{
