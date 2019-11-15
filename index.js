@@ -2,6 +2,19 @@ window.onload = function(){
 
 	var contents = [
 		{
+			day: "Friday, November 15",
+			list: [
+				`Review: <code>localStorage</code>, <a href="lectures/index.html">lecture</a> November 1st`,
+				`Exercise: <a href="exercises/index.html">localStorage dichotomy</a>`,
+				`Assignment 4: Group check-ins`
+			],
+			assignmentTitle: '<a href="assignments/assignment4.html">Assignment 4, Week 3</a>',
+			assignment: [
+				`Based off of this week&rsquo;s feedback, select a design to continue refining. Continue focusing how your site&rsquo;s interface interprets your object, what affordances your interface utilizes and how it draws attention to them.`,
+				`For next week, bring in an updated static design, and a rough prototype of your site (this week, focus on building the layout of your site to be fully responsive to mobile and desktop environments. <i>Make sure to upload this prototype to github/glitch</i>).`
+			]
+		},
+		{
 			day: "Friday, November 8",
 			list: [
 				`Assignment 3, Final Critique 💻 🌐 📚`,

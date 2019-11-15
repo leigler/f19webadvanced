@@ -2,6 +2,24 @@ window.onload = function(){
 
 	var contents = [
 		{
+			day: "Exercise for Friday, Nov 15",
+			list: [],
+			assignmentTitle: "localStorage dichotomy",
+			assignment :[
+				`This exercise&rsquo;s goal is to increase your comfort with saving and retrieving data from your browser&rsquo;s <code>localStorage</code>.`,
+				`For this exercise, please create two interactions (i.e. create two eventListeners) with visual outputs that are somehow juxtaposed.`,
+				`To utilize the <code>localStorage</code>, each interaction should update your localStorage item (<code>localStorage.setItem('favCeleb', 'Grumpy Cat');</code>), and each page refresh should check and update your site with your localStorage item&rsquo;s data (<code>localStorage.getItem('favCeleb');</code>).`,
+				`Don&rsquo;t forget to convert your data into the correct type (integer, json, boolean) if necessary!`,
+				`For a refresher, you can read through the Mozilla docs <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">here</a> or find the past lecture and demo files <a href="../lectures/index.html">here</a>.`,
+				`<br><br>Examples include: <ul>
+					<li>Two buttons that respectively increase and decrease a circle&rsquo;s size.</li>
+					<li>An array of words or phrases that are selected and re-ordered on a canvas.</li>
+					<li>A simple drawing + erasing tool.</li>
+					<li>A cross-session stopwatch.</li>
+				</ul>`
+			]
+		},
+		{
 			day: "Exercise for Friday, Oct 18",
 			list : [],
 			assignmentTitle: "JS: Fetch and Libraries",

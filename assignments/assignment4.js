@@ -9,6 +9,13 @@ window.onload = function(){
 			assignmentTitle : "",
 			sections: [
 				{
+					title: `Design refinement and prototyping responsive layouts: Week 3 (for Nov 22)`,
+					paragraphs: [
+					`Based off of this week&rsquo;s feedback, select a design to continue refining. Continue focusing how your site&rsquo;s interface interprets your object, what affordances your interface utilizes and how it draws attention to them.`,
+					`For next week, bring in an updated static design, and a rough prototype of your site (this week, focus on building the layout of your site to be fully responsive to mobile and desktop environments. <i>Make sure to upload this prototype to github/glitch</i>).`
+				]
+				},
+				{
 					title: `Design directions and javascript sketches: Week 2 (for Nov 15)`,
 					paragraphs: [
 					`For next week, prepare two design directions for your 
