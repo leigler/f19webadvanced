@@ -2,6 +2,26 @@ window.onload = function(){
 
 	var contents = [
 		{
+			day: "Friday, November 22",
+			list:[
+				`Assignment 4: Individual Check-ins + Work Session`,
+				`🦃 No class on November 29 🦃`
+			],
+			assignmentTitle: '<a href="assignments/assignment4.html">Assignment 4, Week 4</a>',
+			assignment: [
+				`Over the next two weeks, continue developing your website. By December 6th, your website should be 90% complete.`,
+				`In order to use your time efficiently, consider:
+				<ul>
+					<li>Listing how to effectively check whether <code>localStorage</code> items exist and considering how to load them on page-load.</li>
+					<li>Mapping out which interactions will commit data to your <code>localStorage</code>.</li>
+					<li>Using your early interaction prototypes as a testing ground for saving localStorage data.</li>
+					<li>Using the layout prototype as a template to place your refined design into.</li>
+					<li>Consistently relying (and frequently checking!) on <code>%</code>, <code>vw</code>, and <code>vh</code> units (and <code>@media(){}</code> queries) to maintain a responsive interface.</li>
+				</ul>`,
+				`You will have the option to check in via virtual meetings on <a href="https://docs.google.com/spreadsheets/d/1zJNp4-Uy3M1QG_bQL0SA-2eldo-i1nHCQmmKf6LxDn8/edit?usp=sharing" target="_blank">November 29, and December 4</a>.`
+			]
+		},
+		{
 			day: "Friday, November 15",
 			list: [
 				`Review: <code>localStorage</code>, <a href="lectures/index.html">lecture</a> November 1st`,
@@ -32,7 +52,7 @@ window.onload = function(){
 					<li>A static mock-up (Adobe Illustrator or XD, Sketch, Figma, etc) outlining the affordances you&rsquo;re interested in, the overall layout, and user-flow.</li>
 				<li>A collection of small javascript sketches exploring how your object&rsquo;s affordances can translate into digital interactions.</li>
 				</ul>
-				<i>The following week will be spent developing one of the design directions and beginning to integrate localStorage functionality</i>.`
+				<i>The following week will be spent developing one of the design directions and beginning to integrate localStorage functionality.</i>`
 			]
 		},
 		{
